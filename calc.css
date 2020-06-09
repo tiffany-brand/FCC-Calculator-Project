@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 30px 75px 75px 75px 75px 75px 75px;
+}
+
+.btns {
+  background-color: gray;
+  padding: 20px;
+  border: 2px solid black;
+  font-size: 1.5rem;
+}
+
+.btns:focus {
+  outline-color: black;
+}
+
+#eqDisplay {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  background-color: rgb(243, 188, 236);
+  color: gray;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#display {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  background-color: rgb(243, 188, 236);
+  padding: 20px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#posNeg {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#equals {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
